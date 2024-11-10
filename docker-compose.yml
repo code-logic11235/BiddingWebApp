@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=taipham232 
+      - POSTGRES_PASSWORD=postgrespass
+    ports:
+    #access postgress from outside of docker on begining port and from inside docker from ending port
+    # Maps host port 5432 to container port 5432
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postresql/data
+volumes:
+  pgdata:
