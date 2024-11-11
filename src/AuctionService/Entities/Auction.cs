@@ -22,6 +22,8 @@ public class Auction {
     //public Auction Auction {get; set;} (this is  "navigational property" to set 1v1 relationship )
 
     // public ICollection<Item> Items { get; set; } 
-    // The Auction class has a navigation property ICollection<Item>, which indicates that one auction can have multiple items.
-    // The Item class has a foreign key AuctionId to represent the many items being related to one auction.
+    // The Auction class has a navigation property ICollection<Item>, which indicates that 
+    // one auction can have multiple items.
+    // The Item class has a foreign key AuctionId to represent the many items being 
+    // related to one auction.
 }

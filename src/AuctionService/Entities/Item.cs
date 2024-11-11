@@ -12,7 +12,7 @@ public class Item{
 
     public string Color {get; set;}
 
-    public int Milage {get; set;}
+    public int Mileage {get; set;}
 
     public string ImageUrl {get; set;}
 
@@ -20,6 +20,7 @@ public class Item{
     // define a 1 to 1 relation
 
     public Auction Auction {get; set;}
-    public Guid AuctionId {get; set;}
+    // Auction has     public Item Item { get; set;}  to set up 1v1 relationship
+    public Guid AuctionId {get; set;} //foreign key references ID in Auction class
     
 }
